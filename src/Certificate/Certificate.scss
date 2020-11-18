@@ -1,0 +1,34 @@
+.certificate-container{
+    height:300px;
+    // height: 50vh;
+    margin: auto;
+    width: 80%;
+    margin-top: 50%;
+   
+    .certificate-title{
+        
+        font-size: 45px;
+        text-align: center;
+        font-family: 'Quicksand',sans-serif;
+          @media screen and (max-width:1050px){
+            font-size:42px;
+          }
+          @media screen and (max-width:470px){
+            font-size:35px;
+          }
+    }
+    .certificate-img-container{
+        text-align: center;
+        :hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5);  
+                // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .certificate-img {
+            height:auto;
+            width: 150px;
+        }
+    }
+    
+}

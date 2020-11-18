@@ -1,0 +1,104 @@
+.nav-container {
+  // margin: auto;
+  position: fixed;
+  width: 100%;
+  top:0;
+  @media screen  and (max-width:1024px) {
+    text-align: right;
+  }
+  .nav-tabs {
+    height: 65px;
+    text-align: center;
+  }
+  .nav-tab {
+    height: 65px;
+    border: 3px;
+  }
+  .active{
+    // border: 0px 0px 0px 5px solid rgb(0, 0, 255);
+    height: 65px;
+    border: 3px;
+    color: #6fb7fade;
+    // border-bottom: 1px solid #333;
+    .nav-tab {
+      height: 65px;
+      // border: 3px;
+      border-bottom: 2px solid #3f51b5;
+    }
+    
+  }
+  .mobileView{
+    display: none;
+    @media screen  and (max-width:1024px) {
+      display: inline;
+      // float: right;
+    }
+    right: 0px;
+  }
+  .webView{
+    display: inline;
+    @media screen  and (max-width:1024px) {
+      display: None;
+    }
+  }
+  .active-nav-mobileView{
+    
+    width: 55%;
+    position: fixed;
+    right: 0%;
+    top:0;
+    transition: 1s;
+    margin-top:0 ;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    height:  100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // z-index: 1000px;
+    padding-left: 10px;
+    .page-route{
+      padding-top: 80%;
+    }
+    .close-button{
+      float: left;
+      padding-top: 10px;
+    }
+    .sideBar-tab{
+      width: 100%;
+      max-width: 100% !important;
+      color:#000000DE;
+    }
+    .active{
+      width: 100%;
+      max-width: 100% !important;
+      color:#6fb7fade;
+    }
+  }
+  .nav-mobileView{
+    width: 50%;
+    position: fixed;
+    right: -100%;
+    top:0;
+    transition: 1s;
+    margin-top:0 ;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    height:  100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // z-index: 1000px;
+    padding-left: 10px;
+    .page-route{
+      padding-top: 80%;
+    }
+    .close-button{
+      float: left;
+      padding-top: 10px;
+    }
+    .sideBar-tab{
+      width: 100%;
+      max-width: 100% !important;
+    }
+    
+  }
+}
