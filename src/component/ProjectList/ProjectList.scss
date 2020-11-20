@@ -6,7 +6,7 @@
     margin: auto;
     margin-bottom: 2%;
     margin-top: 2% !important;
-    background-color:#D7D7D7;
+    background-color:#fbfbfb;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     @media screen and (max-width: 1200px) {
@@ -54,9 +54,10 @@
     .project-language{
         display:inline-block;
         margin-right:3%;
-        color: #7a7a7a;
+        color:#0008ff;
         margin-top: 0;
         margin-bottom: 2%;
+        font-weight: bold;
         
         @media screen and (max-width: 645px) {
             padding-left: 5%;

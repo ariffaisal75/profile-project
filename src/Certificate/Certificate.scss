@@ -19,16 +19,28 @@
     }
     .certificate-img-container{
         text-align: center;
-        :hover{
-            -ms-transform: scale(1.5); /* IE 9 */
-            -webkit-transform: scale(1.5); /* Safari 3-8 */
-            transform: scale(1.5);  
-                // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
         .certificate-img {
             height:auto;
             width: 150px;
         }
+        .validation-number-title{
+          font-family: 'Quicksand',sans-serif;
+          text-align: center;
+        }
+        .validation-number-container{
+          display: inline-block;
+        }
+        .validation-number{
+          font-family: 'Quicksand',sans-serif;
+          text-align: center;
+        }
     }
+    
+    .certificate-img:hover{
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5);  
+          // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
     
 }
