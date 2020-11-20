@@ -26,12 +26,9 @@ export default function Certificate() {
                         <p className='validation-number-title'>Validation Number:</p>
                         <div classname='validation-number-container'>
                             <p className='validation-number'>{data.validationId}</p>
-                            {/* <CopyToClipboard text={data.validationId} onCopy={() => setState({copied: true})}> 
-                                <IconButton aria-label="delete" className='copy-icon' >
-                                    <FileCopyIcon fontSize="small" className='icon'/>
-                                </IconButton> */}
+                             <CopyToClipboard text={data.validationId} onCopy={() => setState({copied: true})}> 
                                 <button className='copy-icon'><FileCopyIcon fontSize="small" className='icon'/></button>
-                                {/* </CopyToClipboard> */}
+                            </CopyToClipboard> 
                         </div>
                         
                         </>

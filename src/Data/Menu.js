@@ -31,7 +31,7 @@ export const menu = [
     {
         name: 'Contact',
         ContainerId: 'contact',
-        offset: -250,
+        offset: -100,
         duration: 500,
     }
 ]
