@@ -5,6 +5,7 @@ import * as imageData from '../Data/Cert';
 import IconButton from '@material-ui/core/IconButton';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
+import copyIcon from '../assets/copy-solid.svg'
 import './Certificate.scss'
 
 
@@ -25,11 +26,12 @@ export default function Certificate() {
                         <p className='validation-number-title'>Validation Number:</p>
                         <div classname='validation-number-container'>
                             <p className='validation-number'>{data.validationId}</p>
-                            <CopyToClipboard text={data.validationId} onCopy={() => setState({copied: true})}> 
+                            {/* <CopyToClipboard text={data.validationId} onCopy={() => setState({copied: true})}> 
                                 <IconButton aria-label="delete" className='copy-icon' >
-                                    <FileCopyIcon fontSize="small" />
-                                </IconButton>
-                                </CopyToClipboard>
+                                    <FileCopyIcon fontSize="small" className='icon'/>
+                                </IconButton> */}
+                                <button className='copy-icon'><FileCopyIcon fontSize="small" className='icon'/></button>
+                                {/* </CopyToClipboard> */}
                         </div>
                         
                         </>

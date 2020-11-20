@@ -7,25 +7,25 @@ export const menu = [
     {
         name: 'Introduction',
         ContainerId: 'intro',
-        offset: -200,
+        offset: -100,
         duration: 500,
     },
     {
         name: 'About',
         ContainerId: 'about',
-        offset: -200,
+        offset: -100,
         duration: 500,
     },
     {
         name: 'Certificate',
         ContainerId: 'cert',
-        offset: -200,
+        offset: -100,
         duration: 500,
     },
     {
         name: 'Project',
         ContainerId: 'project',
-        offset: -200,
+        offset: -100,
         duration: 500,
     },
     {
