@@ -71,8 +71,9 @@ export default function Header() {
 
         <div className='webView'>
           <div className="nav-tabs">
-            {MenuData.menu.map((data) => (
+            {MenuData.menu.map((data,idx) => (
               < Link
+                key={idx}
                 activeClass="active"
                 to={data.ContainerId}
                 spy={true}
@@ -100,7 +101,7 @@ export default function Header() {
           </li>
           <div className='page-route'>
             {MenuData.menu.map((data, idx) => (
-              <li>
+              <li key={idx}>
                 <Link
                   activeClass="active"
                   to={data.ContainerId}

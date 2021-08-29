@@ -20,18 +20,18 @@ export default function Certificate() {
             <div className='certificate-contain'>
                 <h1 className="certificate-title">CERTIFICATE</h1>
                 <div className='certificate-img-container'>
-                    {imageData.cert.map((data) => (
-                        <>
+                    {imageData.cert.map((data,idx) => (
+                        <div key={idx}>
                         <Link href ={data.validationLink}><img className='certificate-img' src={data.image} alt={data.title} /></Link>
                         <p className='validation-number-title'>Validation Number:</p>
-                        <div classname='validation-number-container'>
+                        <div className='validation-number-container'>
                             <p className='validation-number'>{data.validationId}</p>
                              <CopyToClipboard text={data.validationId} onCopy={() => setState({copied: true})}> 
                                 <button className='copy-icon'><FileCopyIcon fontSize="small" className='icon'/></button>
                             </CopyToClipboard> 
                         </div>
                         
-                        </>
+                        </div>
                     ))}
                    
                 </div>

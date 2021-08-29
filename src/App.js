@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import Main from './Main/Main';
 import './App.scss';
 import ContactMe from './ContactMe/ContactMe'
 import Header from './Header/Header'

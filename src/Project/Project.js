@@ -14,9 +14,9 @@ export default function Project() {
     return (
         <div className='project-container' id='project'>
             <h1 className='section-title'>PROJECT INVOLVED</h1>
-            {Data.project.map((data) =>
+            {Data.project.map((data,idx) =>
                 (
-                    <ProjectList data={data} className='project-desc' />
+                    <ProjectList key={idx} data={data} className='project-desc' />
                 )
 
             )}

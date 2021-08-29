@@ -27,8 +27,8 @@ export default function ProjectList({
                                                 ({data.place})</h3> </Link>
                                         <p className='Project-description'>{data.desc}</p>
                                         <div className="project-language-container">
-                                            {data.language.map((language) => (
-                                                <p className='project-language'>#{language}</p>
+                                            {data.language.map((language,idx) => (
+                                                <p key={idx} className='project-language'>#{language}</p>
                                             ))}
                                         </div>
 
@@ -52,8 +52,8 @@ export default function ProjectList({
                                         <h3 className='project-title'>{data.title} ({data.year}) ({data.place})</h3>
                                         <p className='Project-description'>{data.desc}</p>
                                         <div className="project-language-container">
-                                            {data.language.map((language) => (
-                                                <p className='project-language'>#{language}</p>
+                                            {data.language.map((language,idx) => (
+                                                <p key={idx}className='project-language'>#{language}</p>
                                             ))}
                                         </div>
 
